@@ -13,11 +13,11 @@
                                                 <div class="col-md">
                                                     <div class="form-floating mb-3 mb-md-0">    
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="name" name="name"type="text" placeholder="fullname" />
+                                                <input class="form-control" id="name" name="name"type="text" placeholder="fullname" /> <?= form_error('name', '<small class="text-danger pl-3">', '</small'); ?>
                                                 <label for="inputName">Full Name</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="email" name="email"type="text" placeholder="name@example.com" />
+                                                <input class="form-control" id="email" name="email"type="text" placeholder="name@example.com" /> <?= form_error('email', '<small class="text-danger pl-3">', '</small'); ?>
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="row mb-3">
