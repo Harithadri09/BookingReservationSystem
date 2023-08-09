@@ -38,7 +38,7 @@ class Auth extends CI_Controller
                 redirect('users/login');
             } else {
                 $this->session->set_flashdata('msg_error', 'Error! Please try again later.');
-                redirect('users/register');
+                redirect('users/registration');
             }
         }
     }
