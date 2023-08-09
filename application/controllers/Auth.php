@@ -17,7 +17,7 @@ class Auth extends CI_Controller
 		$this->load->view('templates/auth_footer');
 	} 
 
-	public function register() {
+	public function registration() {
         $this->form_validation->set_rules('firstname','First Name','trim|required');
         $this->form_validation->set_rules('lastname','Last Name','trim|required');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|is_unique[user.email]');
