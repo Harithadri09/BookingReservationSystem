@@ -40,6 +40,8 @@ class Auth extends CI_Controller
                 $this->session->set_flashdata('msg_error', 'Error! Please try again later.');
                 redirect('auth/registration');
             }
+        $this->db->insert('user', $data);
+        redirect('auth');
         }
     }
 } 
