@@ -28,9 +28,9 @@ class Auth extends CI_Controller
         $data['title'] = 'Register';
 
         if ($this->form_validation->run() === FALSE) {
-            $this->load->view('templates/header', $data);
-            $this->load->view('users/register');
-            $this->load->view('templates/footer');
+            $this->load->view('templates/auth_header', $data);
+            $this->load->view('auth/registration');
+            $this->load->view('templates/auth_footer');
 
         } else {
             if ($this->user_model->set_user()) {
