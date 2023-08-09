@@ -35,10 +35,10 @@ class Auth extends CI_Controller
         } else {
             if ($this->user_model->set_user()) {
                 $this->session->set_flashdata('msg_success', 'Registration Successful!');
-                redirect('users/login');
+                redirect('auth/login');
             } else {
                 $this->session->set_flashdata('msg_error', 'Error! Please try again later.');
-                redirect('users/registration');
+                redirect('auth/registration');
             }
         }
     }
